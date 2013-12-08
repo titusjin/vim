@@ -31,10 +31,17 @@
 	set encoding=utf8
 	set tenc=utf8
 " }
+
 " vundle {
 	set rtp+=~/.vim/bundle/vundle
+	" in windows , suggest put .vim on $HOME/.vim/bundle/vundle
+	" set rtp+=$HOME/.vim/bundle/vundle
 	call vundle#rc()
 " }
+
 " Budle with Vundle {
+	" github上的用户写的插件，使用这种用户名+repo名称的方式
 	Bundle 'scrooloose/nerdtree'
+	Bundle 'jistr/vim-nerdtree-tabs'
+	Bundle 'gmarik/vundle'
 " }
