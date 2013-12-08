@@ -23,6 +23,13 @@
 
 	filetype on
 	filetype off
+
+	set t_Co=256
+" }
+" Always use UTF-8 encoding {
+	set fileencoding=utf-8
+	set encoding=utf8
+	set tenc=utf8
 " }
 " vundle {
 	set rtp+=~/.vim/bundle/vundle
