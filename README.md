@@ -1,4 +1,4 @@
 vim
 ===
 
-ifno related to vim
+Titus jin's vim settings

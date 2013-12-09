@@ -16,7 +16,7 @@
 	set autoindent
 	set nu
 	set foldmethod=marker
-	:colorscheme torte
+	:colorscheme default
 
 	set foldmethod=manual
 	set guifont=:h20
