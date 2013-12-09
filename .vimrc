@@ -1,31 +1,37 @@
 " General {
 	set bg=dark
-    
-	if &background == "dark"
+	set nu
 	syntax on
-	hi normal guibg=black
-	endif
-
-	syntax on
+	
 	filetype plugin indent on
-	set backspace=indent,eol,start
-	set shiftwidth=4
-	set smartindent
-	set autoindent
-	set nu
-	set autoindent
-	set nu
-	set foldmethod=marker
-	:colorscheme default
-
-	set foldmethod=manual
-	set guifont=:h20
-
 	filetype on
 	filetype off
 
+	set backspace=indent,eol,start
+	set smartindent
+	set autoindent
+	set history=200
+	
+	setlocal tabstop=4    
+	setlocal shiftwidth=4
+	setlocal expandtab
+	setlocal autoindent
+	setlocal smarttab
+
+	set foldmethod=marker
+	set foldmethod=manual
+	set guifont=:h20
+
 	set t_Co=256
 " }
+
+" NERTDTREE config {
+	autocmd VimEnter * NERDTree
+	nnoremap <silent> <F5> :NERDTree<CR>
+    let NERDTreeShowHidden=1
+    let NERDTreeShowLineNumbers=1
+" } 
+
 " Always use UTF-8 encoding {
 	set fileencoding=utf-8
 	set encoding=utf8
@@ -44,4 +50,6 @@
 	Bundle 'scrooloose/nerdtree'
 	Bundle 'jistr/vim-nerdtree-tabs'
 	Bundle 'gmarik/vundle'
+	Bundle 'tpope/vim-surround'
+    Bundle "pangloss/vim-javascript"
 " }
