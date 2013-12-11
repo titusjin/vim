@@ -7,6 +7,8 @@ set bg=dark
 	filetype on
     
 	autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+	autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+	autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 	set backspace=indent,eol,start
 	set smartindent
 	set autoindent
