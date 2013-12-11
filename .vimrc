@@ -1,12 +1,12 @@
 " General {
-	set bg=dark
+set bg=dark
 	set nu
 	syntax on
 	
 	filetype plugin indent on
 	filetype on
-	filetype off
-
+    
+	autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 	set backspace=indent,eol,start
 	set smartindent
 	set autoindent
@@ -15,7 +15,6 @@
 	setlocal tabstop=4    
 	setlocal shiftwidth=4
 	setlocal expandtab
-	setlocal autoindent
 	setlocal smarttab
 
 	set foldmethod=marker
@@ -27,9 +26,11 @@
 
 " NERTDTREE config {
 	autocmd VimEnter * NERDTree
-	nnoremap <silent> <F5> :NERDTree<CR>
-    let NERDTreeShowHidden=1
-    let NERDTreeShowLineNumbers=1
+	nmap <silent> <F10> :NERDTreeTabsToggle<CR>
+	let NERDTreeShowHidden=1
+	let NERDTreeShowLineNumbers=1
+	let NERDTreeQuitOnOpen=1
+	let NERDTreeDirArrows=0
 " } 
 
 " Always use UTF-8 encoding {
@@ -51,5 +52,7 @@
 	Bundle 'jistr/vim-nerdtree-tabs'
 	Bundle 'gmarik/vundle'
 	Bundle 'tpope/vim-surround'
-    Bundle "pangloss/vim-javascript"
+	Bundle "pangloss/vim-javascript"
+	Bundle "mattn/emmet-vim"
 " }
+let g:user_emmet_expandabbr_key = '<c-F>'
