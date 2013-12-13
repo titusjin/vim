@@ -19,8 +19,10 @@ set bg=dark
 	setlocal expandtab
 	setlocal smarttab
 
-	set foldmethod=marker
-	set foldmethod=manual
+	set foldmethod=indent
+	set foldnestmax=2
+	set foldlevelstart=1
+	let javaScript_fold=1 
 	set guifont=:h20
 
 	set t_Co=256
