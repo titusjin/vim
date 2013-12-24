@@ -26,6 +26,9 @@ set bg=dark
 	set guifont=:h20
 
 	set t_Co=256
+
+	" using differnt keymap for faterer typing
+	:imap jk <Esc> 
 " }
 
 " NERTDTREE config {
@@ -33,7 +36,7 @@ set bg=dark
 	nmap <silent> <F10> :NERDTreeTabsToggle<CR>
 	let NERDTreeShowHidden=1
 	let NERDTreeShowLineNumbers=1
-	let NERDTreeQuitOnOpen=1
+	let NERDTreeQuitOnOpen=0
 	let NERDTreeDirArrows=0
 " } 
 
