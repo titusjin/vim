@@ -61,7 +61,7 @@ set bg=dark
 	Bundle 'tpope/vim-surround'
 	Bundle "pangloss/vim-javascript"
 	Bundle "mattn/emmet-vim"
-    Bundle "rizzatti/funcoo.vim"
-    Bundle "rizzatti/dash.vim"
+	Bundle "rizzatti/funcoo.vim"
+	Bundle "rizzatti/dash.vim"
 " }
 let g:user_emmet_expandabbr_key = '<c-F>'
